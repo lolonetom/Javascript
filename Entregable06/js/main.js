@@ -25,7 +25,7 @@ class Carrito {
     calcularTotal(){
         let total = 0;
         for(let i = 0; i < this.plan.length; i++){
-            total = total + this.plan[i].precio;
+            total = total + parseInt(this.plan[i].precio);
         }
         return total;
     }
@@ -50,12 +50,12 @@ function renderCard(planhosting) {
 
 let catalogoPlanes = [];
 
-let plan1M = new PlanHosting(1, "Básico - Mensual", "150");
-let plan2M = new PlanHosting(2, "Negocio - Mensual", "200");
-let plan3M = new PlanHosting(3, "Avanzado - Mensual", "250");
-let plan1A = new PlanHosting(4, "Básico - Anual", "1500");
-let plan2A = new PlanHosting(5, "Negocio - Anual", "2400");
-let plan3A = new PlanHosting(6, "Avanzado - Anual", "2700");
+let plan1M = new PlanHosting(1, "Básico - Mensual", "150.00");
+let plan2M = new PlanHosting(2, "Negocio - Mensual", "200.00");
+let plan3M = new PlanHosting(3, "Avanzado - Mensual", "250.00");
+let plan1A = new PlanHosting(4, "Básico - Anual", "1500.00");
+let plan2A = new PlanHosting(5, "Negocio - Anual", "2400.00");
+let plan3A = new PlanHosting(6, "Avanzado - Anual", "2700.00");
 
 
 catalogoPlanes.push(plan1M);
